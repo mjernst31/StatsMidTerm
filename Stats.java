@@ -1,9 +1,8 @@
-import java.util.*;
-
 /**
  * @author mjern
  * @version 1.1
  */
+import java.util.*;
 public class Stats {
     /**
      * Rounds a double to 2 decimal places
@@ -76,6 +75,4 @@ public class Stats {
         return 0;
 
     }
-
-    public static double
 }

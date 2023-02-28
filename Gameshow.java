@@ -8,13 +8,12 @@
 
 import java.util.*;
 import java.lang.*;
-
 public class Gameshow {
     static Random rand = new Random();
 
-    /*
-    @param runtime  The integer value which the method in main sends, denotes how
-    many instances of the simulation should be ran.
+    /**
+     * Outputs the chance of winning in the Monte Hall problem when switching doors, compared to not switching doors
+     * @param runtime Runtime is an integer that defines how many times the calculation will run.
      */
     static public void slammer(int runtime) {
         double totalRuns = 0;

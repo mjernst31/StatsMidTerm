@@ -8,13 +8,14 @@ class BirthdaySolver {
     static Random rand = new Random();
 
     /**
-     * Generates random birthdates for a group of people and returns the chance of two people having the same birthdate.
+     * Calculates the chance of 2 people sharing the same birthday.
      * @return the chance of two people in the group having the same birthdate
      * */
     public static double generateDates() {
         ArrayList<Integer> groupedCollection = new ArrayList<>();
         boolean run = true;
 
+        //Generates different dates, throws them into the array, and keeps adding dates until 2 match. Then it returns the chance of that happening.
         groupedCollection.add(rand.nextInt(365) + 1);
         while (run) {
             for (int i = 0; i < groupedCollection.size(); i++) {
@@ -29,9 +30,5 @@ class BirthdaySolver {
         }
 
         return (1.0/groupedCollection.size()) * 100;
-    }
-
-    public static void main(String[] args) {
-        System.out.printf("Chance of 2 students sharing the same birhday in this simulation was %.2f%%",BirthdaySolver.generateDates());
     }
 }
