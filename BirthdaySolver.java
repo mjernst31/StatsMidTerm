@@ -1,9 +1,9 @@
-import java.util.*;
-
 /**
  * @author Matthew Ernst
  * @version 1.1
  */
+
+import java.util.*;
 class BirthdaySolver {
     static Random rand = new Random();
 

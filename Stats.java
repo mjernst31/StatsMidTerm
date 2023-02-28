@@ -1,11 +1,12 @@
 /**
- * @author mjern
+ * @author Matthew Ernst
  * @version 1.1
  */
+
 import java.util.*;
-public class Stats {
+public class Stats{
     /**
-     * Rounds a double to 2 decimal places
+     * Homemade function to round a double to 2 decimal places to make calculations within this class look nicer.
      * @param roundThis the number that will be rounded
      * @return returns the rounded number
      */
@@ -14,7 +15,7 @@ public class Stats {
     }
 
     /**
-     * Takes the average
+     * Calculates the average of a given ArrayList of doubles
      * @param collection the array that will be looked at when finding the average
      * @return returns the average of collection
      */
@@ -37,9 +38,9 @@ public class Stats {
     }
 
     /**
-     * Gets the median of a sent array
+     * Finds the median of the sent array.
      * @param collection array that is looked at to find the median
-     * @return the median as a double
+     * @return the median as a double, if it cant be found returns 0.
      */
     public static double median(ArrayList<Double> collection) {
         Collections.sort(collection);
@@ -73,6 +74,5 @@ public class Stats {
 
         System.out.println("Data Set was not long enough. Returning 0, please try again.");
         return 0;
-
     }
 }
