@@ -75,4 +75,35 @@ public class Stats{
         System.out.println("Data Set was not long enough. Returning 0, please try again.");
         return 0;
     }
+
+    /**
+     * Finds the data in the ArrayList 'collection' that repeats the most
+     * @param collection The ArrayList that we are searching
+     * @return returns that data that repeats the most. If there are multiple doubles that repeat the same amount of times, it returns the first in the array.
+     */
+    public static double mode(ArrayList<Double> collection){
+        double repeat = 0; //The current double that has repeated the most
+        boolean first = true;
+        int sum; //How many times the current double has repeated
+
+        for(int i = 0; i < collection.size(); i++) {
+            sum = 0;
+
+            for(int j = 0; j < collection.size(); j++)
+                if(collection.get(j).equals(collection.get(i)))
+                    sum++;
+
+            //This statement exists to intialize repeat on the first walk of the array.
+            if(first){
+                repeat = collection.get(i);
+                first = false;
+            }
+
+            if(sum > repeat)
+                repeat = collection.get(i);
+
+        }
+
+        return repeat;
+    }
 }
