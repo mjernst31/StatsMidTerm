@@ -9,7 +9,7 @@ class BirthdaySolver {
 
     /**
      * Calculates the chance of 2 people sharing the same birthday.
-     * @return the chance of two people in the group having the same birthdate
+     * @return the chance of two people in a group having the same birthday
      * */
     public static double generateDates() {
         ArrayList<Integer> groupedCollection = new ArrayList<>();
