@@ -3,7 +3,7 @@
  The contestant can either keep their original choice or switch to another door. The goal of this
  simulation is to prove switching is more likely to result in a win.
  @author Matthew Ernst
- @version 1.3
+ @version 1.1
  */
 
 import java.util.*;
