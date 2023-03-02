@@ -1,6 +1,5 @@
 /**
- * @author Matt Ernst
- * @version 1.1
+ * @author Matthew Ernst
  */
 
 import java.util.*;
